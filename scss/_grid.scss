@@ -1,0 +1,30 @@
+* {
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: $black;
+}
+.container {
+  display: flex;
+  max-width: 1104px;
+  margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    max-width: 904px;
+  }
+  @media (max-width: 768px) {
+    max-width: 704px;
+  }
+  @media (max-width: 425px) {
+    max-width: 377px;
+  }
+  @media (max-width: 320px) {
+    max-width: 272px;
+  }
+}

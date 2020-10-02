@@ -1,0 +1,242 @@
+.header {
+  background-color: $purple;
+}
+.header__logo-icon {
+  width: 55px;
+  height: 55px;
+}
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  z-index: 10;
+}
+.burger-menu {
+  display: none;
+
+  @media (max-width: 425px) {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  &.toggle {
+    background-color: $yellow;
+    width: 32px;
+    height: 32px;
+    padding-right: 5px;
+  }
+}
+.burger-menu span {
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.burger-menu:hover {
+  cursor: pointer;
+}
+.menu__line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: $white;
+  margin-top: 6px;
+}
+.menu__line.line-2 {
+  width: 16px;
+}
+.toggle {
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  -o-transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
+.toggle .line-2 {
+  opacity: 0;
+}
+.toggle .line-1 {
+  background-color: #fff;
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+  -ms-transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line-3 {
+  background-color: #fff;
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+  -ms-transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.header__navbar {
+  @media (max-width: 425px) {
+    display: none;
+    background-color: $darkPurple;
+    position: absolute;
+    top: 63px;
+    left: 0;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+.header__navbar-list {
+  display: flex;
+  margin: 0;
+  list-style: none;
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    padding-left: 24px;
+  }
+}
+.list-item {
+  padding: 27px 20px 27px 20px;
+  border-bottom: 2px solid transparent;
+
+  @media (max-width: 425px) {
+    padding: 16px 0;
+  }
+
+  &:hover {
+    border-bottom: 2px solid $yellow;
+  }
+}
+.list-item__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: $white;
+  text-decoration: none;
+
+  &:nth-last-child() {
+    padding-right: 0;
+  }
+}
+.banner {
+  padding-top: 140px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @media (max-width: 425px) {
+    padding-top: 48px;
+  }
+}
+.banner-slide {
+  display: flex;
+
+  @media (max-width: 768px) {
+    margin: 0;
+  }
+}
+.banner-slide__text {
+  flex: 0 0 75%;
+  color: $white;
+  z-index: 1;
+  padding-bottom: 188px;
+
+  @media (max-width: 425px) {
+    flex: 0 0 100%;
+    padding-bottom: 72px;
+  }
+}
+.banner-slide__text-title {
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.banner-slide__text-description {
+  margin: 0;
+  padding-top: 16px;
+}
+.banner-slide__picture {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 528px;
+  width: 70%;
+  background: url(/img/banner.jpg) 100% 100% no-repeat;
+  background-size: cover;
+
+  @media (max-width: 768px) {
+    width: 75%;
+    background: url(/img/banner-tablet.jpg) 100% 100% no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: 425px) {
+    top: 63px;
+    height: 232px;
+    width: 50%;
+    background: url(/img/banner-mobile.jpg) 100% 100% no-repeat;
+    background-size: cover;
+  }
+}
+.banner-slide__picture.slide-2 {
+  background: url(/img/banner-2.jpg) 100% 100% no-repeat;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.banner-nav {
+  bottom: 48px;
+}
+.banner-nav__dots {
+  display: flex;
+  margin-left: 28%;
+  padding-bottom: 48px;
+
+  @media (max-width: 1401px) {
+    margin-left: 29%;
+  }
+  @media (max-width: 768px) {
+    margin-left: 22%;
+  }
+
+  @media (max-width: 425px) {
+    padding-bottom: 25px;
+  }
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: $white;
+  margin: 0 12px;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  &.active {
+    opacity: 1;
+  }
+}

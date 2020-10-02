@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Mediapronet-test</title>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader__line">
+        <svg class="header__logo-icon">
+          <use xlink:href="img/symbol/sprite.svg#logo"></use>
+        </svg>
+      </div>
+      <div class="preloader__counter">
+        <div class="preloader__counter-timer">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header-menu">
+        <div class="header__logo">
+          <svg class="header__logo-icon">
+            <use xlink:href="img/symbol/sprite.svg#logo"></use>
+          </svg>
+        </div>
+        <div class="burger-menu">
+          <span class="menu__line line-1"></span>
+          <span class="menu__line line-2"></span>
+          <span class="menu__line line-3"></span>
+        </div>
+        <nav class="header__navbar">
+          <ul class="header__navbar-list">
+            <li class="list-item">
+              <a href="#" class="list-item__link">Описание</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-item__link">Локация</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-item__link">Смотрите также</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-item__link">Запись на просмотр</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- banner -->
+      <div class="banner">
+        <div class="banner-slide container fade">
+          <div class="banner-slide__text">
+            <h1 class="banner-slide__text-title">
+              Многофункциональный жилой квартал HEADLINER
+            </h1>
+            <p class="banner-slide__text-description">
+              Сдача — 4 кв. 2022, есть сданные
+            </p>
+          </div>
+          <div class="banner-slide__picture"></div>
+        </div>
+        <div class="banner-slide container fade">
+          <div class="banner-slide__text">
+            <h1 class="banner-slide__text-title">
+              Многофункциональный жилой квартал HEADLINER-2
+            </h1>
+            <p class="banner-slide__text-description">
+              Сдача — 4 кв. 2022, есть сданные
+            </p>
+          </div>
+          <div class="banner-slide__picture slide-2"></div>
+        </div>
+        <div class="banner-nav">
+          <div class="banner-nav__dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- features -->
+    <section class="features">
+      <div class="features-box container">
+        <div class="features__titles">
+          <div class="features__titles-box">
+            <button class="features__titles-btn active">Плюсы и минусы</button>
+            <button class="features__titles-btn">Аэротур</button>
+            <button class="features__titles-btn">Планировки</button>
+            <button class="features__titles-btn">Застройщик</button>
+          </div>
+        </div>
+        <div class="features__list">
+          <div class="features__list-strengths">
+            <ul class="strengths">
+              <li class="strengths-item">
+                <svg class="strengths__icon">
+                  <use xlink:href="img/symbol/sprite.svg#plus"></use>
+                </svg>
+                Привлекательная архитектура
+              </li>
+              <li class="strengths-item">
+                <svg class="strengths__icon">
+                  <use xlink:href="img/symbol/sprite.svg#plus"></use>
+                </svg>
+                Большой выбор квартир
+              </li>
+              <li class="strengths-item">
+                <svg class="strengths__icon">
+                  <use xlink:href="img/symbol/sprite.svg#plus"></use>
+                </svg>
+                Поразительные виды из окон
+              </li>
+              <li class="strengths-item">
+                <svg class="strengths__icon">
+                  <use xlink:href="img/symbol/sprite.svg#plus"></use>
+                </svg>
+                Сложившийся район со всем необходимым
+              </li>
+              <li class="strengths-item">
+                <svg class="strengths__icon">
+                  <use xlink:href="img/symbol/sprite.svg#plus"></use>
+                </svg>
+                Сравнительно низкие цены
+              </li>
+            </ul>
+          </div>
+          <div class="features__list-weaknesses">
+            <ul class="weaknesses">
+              <li class="weaknesses-item">
+                <svg class="strengths__icon">
+                  <use xlink:href="img/symbol/sprite.svg#minus"></use>
+                </svg>
+                Недостаток собственной инфраструктуры
+              </li>
+              <li class="weaknesses-item">
+                <svg class="strengths__icon">
+                  <use xlink:href="img/symbol/sprite.svg#minus"></use>
+                </svg>
+                Частые пробки вокруг
+              </li>
+              <li class="weaknesses-item">
+                <svg class="strengths__icon">
+                  <use xlink:href="img/symbol/sprite.svg#minus"></use>
+                </svg>
+                Не лучшая экология
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- viewing -->
+    <section class="viewing">
+      <div class="viewing-box container">
+        <div class="viewing-box__title">
+          <p>Запишитесь на просмотр и оцените всё сами!</p>
+        </div>
+        <a href="#contact-form">
+          <div class="viewing-box__entry">
+            <button class="viewing-box__entry-btn">Запись на просмотр</button>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- location -->
+    <section class="location">
+      <div class="location-box container">
+        <h2 class="location__title">Локация</h2>
+        <p class="location__adress">
+          Москва, ЦАО, Пресненский, Шмитовский проезд, вл. 39
+        </p>
+        <div class="location__road">
+          <div class="location__road-first">
+            <span class="road-station">
+              <span class="road-symbol"></span>
+              <span class="road-station__title">Шелепиха</span>
+            </span>
+            <span class="road-time">5 мин пешком</span>
+          </div>
+          <div class="location__road-first">
+            <span class="road-station">
+              <span class="road-symbol"></span>
+              <span class="road-station__title">Фили</span>
+            </span>
+            <span class="road-time">6 мин на транспорте</span>
+          </div>
+        </div>
+      </div>
+      <div class="location-map">
+        <div id="map"></div>
+        <div class="location-map__objects">
+          <div class="location-map__objects-list">
+            <div class="object-item">
+              <input
+                class="object-item__check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck1"
+                checked
+              />
+              <span class="check-box"></span>
+              <label class="object-item__check-label" for="defaultCheck1">
+                Школы
+              </label>
+            </div>
+            <div class="object-item">
+              <input
+                class="object-item__check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck2"
+                checked
+              />
+              <span class="check-box"></span>
+              <label class="object-item__check-label" for="defaultCheck2">
+                Аптеки
+              </label>
+            </div>
+            <div class="object-item">
+              <input
+                class="object-item__check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck3"
+              />
+              <span class="check-box"></span>
+              <label class="object-item__check-label" for="defaultCheck3">
+                Высшие учебные заведения
+              </label>
+            </div>
+            <div class="object-item">
+              <input
+                class="object-item__check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck4"
+              />
+              <span class="check-box"></span>
+              <label class="object-item__check-label" for="defaultCheck4">
+                Больницы
+              </label>
+            </div>
+            <div class="object-item">
+              <input
+                class="object-item__check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck5"
+                checked
+              />
+              <span class="check-box"></span>
+              <label class="object-item__check-label" for="defaultCheck5">
+                Магазины
+              </label>
+            </div>
+            <div class="object-item">
+              <input
+                class="object-item__check-input"
+                type="checkbox"
+                value=""
+                id="defaultCheck6"
+                checked
+              />
+              <span class="check-box"></span>
+              <label class="object-item__check-label" for="defaultCheck6">
+                Фитнес
+              </label>
+            </div>
+          </div>
+          <button class="location-map__btn">
+            <svg class="location-map__btn-icon">
+              <use xlink:href="img/symbol/sprite.svg#arrow-down"></use>
+            </svg>
+            <span class="location-map__btn-text"> Объекты инфраструктуры </span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- see-more -->
+    <section class="see-more container">
+      <h2 class="see-more__title">Смотрите также</h2>
+      <div class="see-more__list">
+        <div class="see-more__list-item">
+          <div class="item-picture">
+            <img src="img/building-1.jpg" alt="" />
+            <div class="item-picture__title">
+              <span class="title-phone">8 217 030 - 29 070 951₽</span>
+              <span class="title-description">569 квартир в продаже</span>
+            </div>
+            <div class="label">
+              <svg class="label-icon">
+                <use xlink:href="img/symbol/sprite.svg#rocket"></use>
+              </svg>
+              <svg class="label-icon icon-left">
+                <use xlink:href="img/symbol/sprite.svg#corona"></use>
+              </svg>
+            </div>
+          </div>
+          <span class="item-title">ЖК «Level Стрешнево» (Левел Стрешнево)</span>
+          <span class="item-adress">Москва, СВАО</span>
+          <span class="item-subway">
+            <span class="item-subway__station">
+              <span class="subway-symbol"></span>
+              Алексеевская</span
+            >
+            <span class="item-subway__time">
+              <svg class="item-subway__time-icon">
+                <use xlink:href="img/symbol/sprite.svg#human"></use>
+              </svg>
+              5 мин</span
+            >
+          </span>
+        </div>
+        <!-- 2d -->
+        <div class="see-more__list-item">
+          <div class="item-picture">
+            <img src="img/building-2.jpg" alt="" />
+            <div class="item-picture__title">
+              <span class="title-phone">8 217 030 - 29 070 951₽</span>
+              <span class="title-description">569 квартир в продаже</span>
+            </div>
+            <div class="label">
+              <svg class="label-icon">
+                <use xlink:href="img/symbol/sprite.svg#percent"></use>
+              </svg>
+              <span class="label-text">Действует скидка</span>
+            </div>
+          </div>
+          <span class="item-title">ЖК «Новое Медведково»</span>
+          <span class="item-adress">Москва, СВАО</span>
+          <span class="item-subway">
+            <span class="item-subway__station">
+              <span class="subway-symbol"></span>
+              Алексеевская</span
+            >
+            <span class="item-subway__time">
+              <svg class="item-subway__time-icon">
+                <use xlink:href="img/symbol/sprite.svg#human"></use>
+              </svg>
+              5 мин</span
+            >
+          </span>
+        </div>
+        <!-- 3d -->
+        <div class="see-more__list-item">
+          <div class="item-picture">
+            <img src="img/building-3.jpg" alt="" />
+            <div class="item-picture__title">
+              <span class="title-phone">8 217 030 - 29 070 951₽</span>
+              <span class="title-description">569 квартир в продаже</span>
+            </div>
+          </div>
+          <span class="item-title">ЖК «Люберецкий»</span>
+          <span class="item-adress">Москва, СВАО</span>
+          <span class="item-subway">
+            <span class="item-subway__station">
+              <span class="subway-symbol"></span>
+              Алексеевская</span
+            >
+            <span class="item-subway__time">
+              <svg class="item-subway__time-icon">
+                <use xlink:href="img/symbol/sprite.svg#human"></use>
+              </svg>
+              5 мин</span
+            >
+          </span>
+        </div>
+        <!-- 4th -->
+        <div class="see-more__list-item">
+          <div class="item-picture">
+            <img src="img/building-4.jpg" alt="" />
+            <div class="item-picture__title">
+              <span class="title-phone">8 217 030 - 29 070 951₽</span>
+              <span class="title-description">569 квартир в продаже</span>
+            </div>
+          </div>
+          <span class="item-title">ЖК «Измайловский лес»</span>
+          <span class="item-adress">Москва, СВАО</span>
+          <span class="item-subway">
+            <span class="item-subway__station">
+              <span class="subway-symbol"></span>
+              Алексеевская</span
+            >
+            <span class="item-subway__time">
+              <svg class="item-subway__time-icon">
+                <use xlink:href="img/symbol/sprite.svg#human"></use>
+              </svg>
+              5 мин</span
+            >
+          </span>
+        </div>
+      </div>
+    </section>
+    <!-- contact form -->
+    <section id="contact-form" class="contact-form">
+      <div class="container">
+        <div class="contact-form-box">
+          <h2 class="contact-form__title">
+            Запишитесь на просмотр и оцените всё сами!
+          </h2>
+          <form action="" method="get" class="form-example">
+            <div class="form-example">
+              <input
+                class="contact-form__input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Как вас зовут?"
+              />
+            </div>
+            <div class="contact-form__dates">
+              <div class="date">
+                <form>
+                  <div class="__select" data-state="">
+                    <div class="__select__title" data-default="16 сентября">
+                      16 сентября
+                    </div>
+                    <div class="__select__content">
+                      <input
+                        id="singleSelect0"
+                        class="__select__input"
+                        type="radio"
+                        name="singleSelect"
+                        checked
+                      />
+                      <label for="singleSelect0" class="__select__label"
+                        >16 сентября</label
+                      >
+                      <input
+                        id="singleSelect1"
+                        class="__select__input"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect1" class="__select__label"
+                        >17 сентября</label
+                      >
+                      <input
+                        id="singleSelect2"
+                        class="__select__input"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect2" class="__select__label"
+                        >18 сентября</label
+                      >
+                      <input
+                        id="singleSelect3"
+                        class="__select__input"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect3" class="__select__label"
+                        >19 сентября</label
+                      >
+                      <input
+                        id="singleSelect4"
+                        class="__select__input"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect4" class="__select__label"
+                        >20 сентября</label
+                      >
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="time">
+                <form>
+                  <div class="__select-1" data-state="">
+                    <div class="__select__title-1" data-default="14:00">
+                      14:00
+                    </div>
+                    <div class="__select__content-1">
+                      <input
+                        id="singleSelect0"
+                        class="__select__input-1"
+                        type="radio"
+                        name="singleSelect"
+                        checked
+                      />
+                      <label for="singleSelect0" class="__select__label-1"
+                        >12:00</label
+                      >
+                      <input
+                        id="singleSelect1"
+                        class="__select__input-1"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect1" class="__select__label-1"
+                        >14:00</label
+                      >
+                      <input
+                        id="singleSelect2"
+                        class="__select__input-1"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect2" class="__select__label-1"
+                        >16:00</label
+                      >
+                      <input
+                        id="singleSelect3"
+                        class="__select__input-1"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect3" class="__select__label-1"
+                        >18:00</label
+                      >
+                      <input
+                        id="singleSelect4"
+                        class="__select__input-1"
+                        type="radio"
+                        name="singleSelect"
+                      />
+                      <label for="singleSelect4" class="__select__label-1"
+                        >20:00</label
+                      >
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="form-example">
+              <input
+                class="contact-form__input"
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="Ваш телефон"
+              />
+            </div>
+            <div class="object-item">
+              <input
+                class="object-item__check-input yellow"
+                type="checkbox"
+                value=""
+                id="defaultCheck10"
+                checked
+              />
+              <span class="check-box yellow"></span>
+              <label class="object-item__check-label" for="defaultCheck10">
+                Напомните мне за 2 часа до визита
+              </label>
+            </div>
+            <div class="contact-form__send">
+              <button class="contact-form__btn">Отправить</button>
+            </div>
+        </div>
+        <div class="contact-form__success">
+          <div class="contact-form__picture">
+            <svg class="contact-form__picture-icon">
+              <use xlink:href="img/symbol/sprite.svg#form-success"></use>
+            </svg>
+          </div>
+          <div class="contact-form__success-text">
+            <p class="success-title">Вы успешно записались на просмотр в ЖК Headliner!</p>
+          <p class="success-description">Мы ждем вас 16 сентября в 16:00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <section class="footer">
+      <div class="container">
+        <div class="footer-elem">
+          <h3 class="footer-elem__title">
+            <span>Новостройки</span>
+            <svg class="footer-elem__title-icon">
+              <use xlink:href="img/symbol/sprite.svg#arrow-down"></use>
+            </svg>
+          </h3>
+          <ul class="footer__navbar">
+            <li class="footer__navbar-item">
+              <a href="" class="footer__navbar-link">Квартиры в Москве</a>
+            </li>
+            <li class="footer__navbar-item">
+              <a href="" class="footer__navbar-link">Квартиры в Новой Москве</a>
+            </li>
+            <li class="footer__navbar-item">
+              <a href="" class="footer__navbar-link">Квартиры в Подмосковье</a>
+            </li>
+            <li class="footer__navbar-item">
+              <a href="" class="footer__navbar-link">В Москве</a>
+            </li>
+            <li class="footer__navbar-item">
+              <a href="" class="footer__navbar-link">В Подмосковье</a>
+            </li>
+            <li class="footer__navbar-item">
+              <a href="" class="footer__navbar-link">В Новой Москве</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 2d -->
+        <div class="footer-elem">
+          <h3 class="footer-elem__title">
+            <span>Популярное</span>
+            <svg class="footer-elem__title-icon">
+              <use xlink:href="img/symbol/sprite.svg#arrow-down"></use>
+            </svg>
+          </h3>
+          <ul class="footer__navbar">
+            <li class="footer__navbar-item">
+              <a href="" class="footer__navbar-link">В рассрочку</a>
+            </li>
+            <li class="footer__navbar-item">
+              <a href="" class="footer__navbar-link">Военная ипотека</a>
+            </li>
+            <li class="footer__navbar-item">
+              <a href="" class="footer__navbar-link">До 4 млн</a>
+            </li>
+            <li class="footer__navbar-item">
+              <a href="" class="footer__navbar-link">До 6 млн</a>
+            </li>
+            <li class="footer__navbar-item">
+              <a href="" class="footer__navbar-link">Внутри МКАД</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 3d -->
+        <div class="footer-elem cont">
+          <h3 class="footer-elem__title">Рекламный отдел</h3>
+          <a href="tel:+7 (495) 987-42-47" class="footer__navbar-link"
+            >+7 (495) 987-42-47 доб. 501</a
+          >
+          <a href="mailto:kp@novostroy-m.ru" class="footer__navbar-link"
+            >kp@novostroy-m.ru</a
+          >
+        </div>
+        <!-- 4th -->
+        <div class="footer-elem">
+          <p class="copyright">
+            &copy; 2011—2020 Новострой-М Всё, что нужно знать о новостройках
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=c6305c62-38ca-485f-8203-093a93c609cd"
+      type="text/javascript"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
