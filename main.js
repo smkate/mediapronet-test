@@ -148,6 +148,21 @@ const validate = () => {
 
 // validate();
 
+// CONTACT FORM
+const btnForm = document.querySelector(".contact-form__btn");
+const successForm = document.querySelector(".contact-form__success");
+// const date = document.querySelector(".__select__title");
+// const time = document.querySelector(".__select__title-1");
+
+const success = () => {
+  // Toggle Nav
+  btnForm.addEventListener("click", (event) => {
+    successForm.style.display = "flex";
+  });
+};
+
+success();
+
 // OPEN mobile footer list
 const footerElem = document.querySelectorAll(".footer-elem");
 
