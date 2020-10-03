@@ -173,12 +173,12 @@
   right: 0;
   height: 528px;
   width: 70%;
-  background: url(/img/banner.jpg) 100% 100% no-repeat;
+  background: url(../img/banner.jpg) 100% 100% no-repeat;
   background-size: cover;
 
   @media (max-width: 768px) {
     width: 75%;
-    background: url(/img/banner-tablet.jpg) 100% 100% no-repeat;
+    background: url(../img/banner-tablet.jpg) 100% 100% no-repeat;
     background-size: cover;
   }
 
@@ -186,12 +186,12 @@
     top: 63px;
     height: 232px;
     width: 50%;
-    background: url(/img/banner-mobile.jpg) 100% 100% no-repeat;
+    background: url(../img/banner-mobile.jpg) 100% 100% no-repeat;
     background-size: cover;
   }
 }
 .banner-slide__picture.slide-2 {
-  background: url(/img/banner-2.jpg) 100% 100% no-repeat;
+  background: url(../img/banner-2.jpg) 100% 100% no-repeat;
 }
 .fade {
   animation-name: fade;
